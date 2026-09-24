@@ -13,8 +13,8 @@ export const initialProfile: UserProfile = {
   location: 'Kolkata, India',
   github: 'https://github.com/durgasankardas',
   linkedin: 'https://linkedin.com/in/durgasankardas',
-  avatarUrl: 'MyImage.jpeg', // Empty means using our high-tech stylized interactive visual avatar with upload option
-  resumeFileName: 'Durga_Sankar_Das_Resume.pdf',
+  avatarUrl: `${import.meta.env.BASE_URL}MyImage.jpeg`,
+  resumeFileName: `${import.meta.env.BASE_URL}Durga_Sankar_Das_Resume.pdf`,
   stats: {
     projects: '3+',
     leetcodeSolved: '250+',
