@@ -29,13 +29,15 @@ export default function App() {
 
   // Resume download
   const handleDownloadResume = () => {
-    const link = document.createElement('a');
-    link.href = '/Durga_Sankar_Das_Resume.pdf';
-    link.download = 'Durga_Sankar_Das_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  const link = document.createElement('a');
+
+  link.href = `${import.meta.env.BASE_URL}Durga_Sankar_Das_Resume.pdf`;
+  link.download = 'Durga_Sankar_Das_Resume.pdf';
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
   // Sync theme class on <html> element
   useEffect(() => {
